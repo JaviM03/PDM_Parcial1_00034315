@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="#EEEEEE">
+        android:background="#000">
 
     </androidx.recyclerview.widget.RecyclerView>
 
@@ -32,7 +32,8 @@
         android:layout_height="wrap_content"
         android:background="#A1D6E2"
         android:padding="15dp"
-        android:src="@drawable/ic_add_black_24dp"
+
+        android:text="Agregar"
         android:textColor="#BCBABE"
         android:textSize="20sp" />
 

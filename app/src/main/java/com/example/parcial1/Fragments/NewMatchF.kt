@@ -87,15 +87,13 @@ class NewMatchF : Fragment() {
                 var partido = Match(0,"0", et_homeTeam.text.toString(), et_guestTeam.text.toString(), 0, 0, false, Calendar.getInstance().time)
                 try {
                     viewModel.insertMatch(partido)
-                    Toast.makeText(context, "Se ha creado el nuevo partido.", Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, "partido creado, regresar a pantalla anterior.", Toast.LENGTH_LONG).show()
                     et_guestTeam.text.clear()
                     et_homeTeam.text.clear()
                 }catch(e: Exception){
-                    Toast.makeText(context, "Fallo al crear el nuevo partido.", Toast.LENGTH_LONG).show()
+                    Toast.makeText(context, "Error al crear.", Toast.LENGTH_LONG).show()
                 }
 
-            }else{
-                Toast.makeText(context, "Por favor revise que se hayan llenado todos los campos.", Toast.LENGTH_LONG).show()
             }
         }
 
@@ -110,17 +108,7 @@ class NewMatchF : Fragment() {
         listener = null
     }
 
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     *
-     *
-     * See the Android Training lesson [Communicating with Other Fragments]
-     * (http://developer.android.com/training/basics/fragments/communicating.html)
-     * for more information.
-     */
+
     interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         fun onFragmentInteraction(uri: Uri)

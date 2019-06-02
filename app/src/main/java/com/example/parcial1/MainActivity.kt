@@ -18,13 +18,13 @@ class MainActivity : AppCompatActivity(),
 
     private lateinit var viewModel: MatchViewModel
 
-    override fun sendData(pos: Int) {
+    override fun sendData(des: Int) {
         viewModel.getAllMatches.observe(this, Observer {
-            if(!it[pos].MatchEnd){
+            if(!it[des].MatchEnd){
 
                 var partido = MatchF()
                 var datos = Bundle()
-                datos.putInt("pos", pos)
+                datos.putInt("des", des)
                 partido.arguments = datos
                 supportFragmentManager
                         .beginTransaction()
@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity(),
 
 
             }else{
-                Toast.makeText(this, "Este partido ya ha finalizado", Toast.LENGTH_SHORT).show()
+
             }
             viewModel.getAllMatches.removeObservers(this)
         })

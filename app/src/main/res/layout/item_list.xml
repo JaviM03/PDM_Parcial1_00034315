@@ -5,7 +5,7 @@
               android:layout_height="wrap_content"
               android:layout_margin="10dp"
               android:padding="15dp"
-              android:background="#fff">
+              android:background="#000">
 
 
     <LinearLayout
@@ -18,13 +18,13 @@
                 android:layout_height="wrap_content">
 
             <TextView
-                    android:id="@+id/tv_teamA"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Team A"
-                    android:textSize="20sp"
-                    android:gravity="center"
-                    android:textColor="#486B00"/>
+                android:id="@+id/tv_teamA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Team A"
+                android:textColor="#486B00"
+                android:textSize="20sp" />
 
         </LinearLayout>
         <LinearLayout
@@ -131,7 +131,7 @@
                 android:text="Results"
                 android:textSize="20sp"
                 android:gravity="center"
-
+                android:textColor="@color/colorAccent"
                 android:layout_marginBottom="10dp"/>
 
 
