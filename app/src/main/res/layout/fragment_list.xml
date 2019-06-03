@@ -12,15 +12,9 @@
         android:background="#EEEEEE"
         android:padding="5dp">
 
-        <Button
-            android:id="@+id/btn_addMatch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#A1D6E2"
-            android:padding="15dp"
-            android:text="Agregar Partido"
-            android:textColor="#BCBABE"
-            android:textSize="20sp" />
+
+
+
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -31,6 +25,16 @@
         android:background="#EEEEEE">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/btn_addMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A1D6E2"
+        android:padding="15dp"
+        android:src="@drawable/ic_add_black_24dp"
+        android:textColor="#BCBABE"
+        android:textSize="20sp" />
 
 
 </LinearLayout>
