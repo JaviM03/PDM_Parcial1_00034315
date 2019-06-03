@@ -51,20 +51,10 @@ class MatchAdapter(var items: List<Match>, var listener: View.OnClickListener): 
                 if(item.MatchEnd) {
                     tv_result.text = "Ganador: " + item.TeamA
                 }
-            }else{
-                tv_scoreA.setTextColor(Color.parseColor("#000000"))
-                tv_scoreB.setTextColor(Color.parseColor("#000000"))
-                if(item.MatchEnd) {
-                    tv_result.text = "Empate"
-                }
+
             }
 
-            if(item.MatchEnd){
 
-            }else{
-
-                tv_result.text = "Resultado por definir"
-            }
 
             val calendar = Calendar.getInstance()
             calendar.time = item.date
