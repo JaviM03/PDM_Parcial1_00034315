@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.MatchFragment"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MATCH #"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/small_gap"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryDark">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/medium_gap"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_homeTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Team A"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_scoreHomeTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="@dimen/big_text"
+                android:textColor="#000000"/>
+
+
+            <Button
+                android:id="@+id/bt_team_a_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:text="@string/action_3_points"
+                android:background="#E6df44"
+                android:textColor="#F0810F"/>
+
+            <Button
+                android:id="@+id/bt_team_a_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:text="@string/action_2_points"
+                android:textColor="#75B1A9"
+                android:background="#D9B44A"/>
+
+            <Button
+                android:id="@+id/bt_team_a_free_throw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:text="@string/action_free_throw"
+                android:textColor="#73605B"
+                android:background="#2D4262"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/medium_gap"
+            android:layout_marginTop="@dimen/medium_gap"
+            android:layout_marginRight="@dimen/medium_gap"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/medium_gap"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_guestTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Team B"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tv_scoreGuestTeam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="@dimen/big_text"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/bt_team_b_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:text="@string/action_3_points"
+                android:background="#E6df44"
+                android:textColor="#F0810F"/>
+
+            <Button
+                android:id="@+id/bt_team_b_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:text="@string/action_2_points"
+                android:background="#D9B44A"
+                android:textColor="#75B1A9"/>
+
+            <Button
+                android:id="@+id/bt_team_b_free_throw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_gap"
+                android:text="@string/action_free_throw"
+                android:textColor="#73605B"
+                android:background="#2D4262"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_resetMatch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_gap"
+            android:text="Reiniciar "
+            android:textSize="20sp"
+            android:textColor="#DB9501"
+            android:background="#2E2300"/>
+
+        <Button
+            android:id="@+id/btn_endMatch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_gap"
+            android:text="Terminar Partido"
+            android:textSize="20sp"
+            android:textColor="#DB9501"
+            android:background="#2E2300"/>
+
+    </LinearLayout>
+
+</LinearLayout>
